@@ -1,9 +1,11 @@
 {
+  "version": 2,
   "builds": [
-    { "src": "frontend-js/main.js", "use": "@vercel/static-build" }
+    { "src": "package.json", "use": "@vercel/static-build" }
   ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/(.*)", "dest": "frontend-js/main.js" }
   ]
 }
+
