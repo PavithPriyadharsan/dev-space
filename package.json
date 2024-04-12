@@ -1,6 +1,7 @@
 {
   "scripts": {
     "watch": "start nodemon db --ignore frontend-js --ignore public/ && start webpack --watch"
+    "vercel-build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "@babel/core": "^7.16.5",
